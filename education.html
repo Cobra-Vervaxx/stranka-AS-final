@@ -1,11 +1,9 @@
 <!DOCTYPE hmtl>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-
-<title>FX education</title>
-<link rel="stylesheet"href="education.css">
-<link rel="icon" type="image/x-icon" href="cobrafavicon.jpg">
+    <meta charset="UTF-8">
+    <title>FX education</title>
+    <link rel="stylesheet" href="education.css">
 </head>
 <body>
     <div class="menu">
@@ -14,10 +12,11 @@
             <div><button id="kurzy">Courses</button></div>
             <div><button id="kontakty">Contacts</button></div>
             <div><button id="faq">FAQ</button></div>
-            <div><button id="recenze">Reviews</button></div>
+            <div><button id="purpose">About us</button></div>
             <div><button id="profesors">Proffesors</button></div>
         </div>
     </div>
+    
 <div id="nadpis">
     
     <img src="xgif.gif">
@@ -28,19 +27,21 @@
 
 <div id="first">
 
-    <img src="basic course.png">
+    <img src="basic course .png">
 
 
     <img src="advanced course.png">
 
 
     <img src="pro course.png">
+    <img src="analysis.png">
+
 
   
 </div>
 
 <div id="second"s>
-<h3>Contacts</h3>
+<h1>Contacts</h1>
 <h2>Beginner course leader-Tate Andrew</h2>
 <h2>Tel:777 725 756</h2>
 <br>
@@ -53,14 +54,32 @@
 </div>
 
 <div id="third">
-  
-<h3>FAQ</h3>
+<h1>FAQ</h1>
+<h2>Experience? Check about us info :D</h2>
+<h2>Are you real Tate brothers? Yes we are, we even have links in bio on instagram</h2>
+<h2>How do I apply for a course? You pay, then you will recieve e-mail with your invitation</h2>
+<h2>How do I know it's not a scam? Everything goes through normal bank,not crypto and you can always contact us</h2>
+
+
 
 </div>
 
 
 <div id="fourth">
-  <h3>Reviews</h3>
+  <h1>About us</h1>
+  <img src="advert.png">
+  
+    <h2>This company was founded by four traders</h2>
+    <h2>We do trading full time and we have already made bilions of dollars</h2>
+    <h2>We have over 20 years of practice</h2>
+    <h2>We teach trading, we don't give signals for trading!</h2>
+    <h2>We have main trading floor in V-Tower, Prague</h2>
+
+
+
+
+
+  
 </div>
 
 <div id="fifth">
@@ -105,10 +124,8 @@
 </div>
 
 <audio id="audio" src="C:\Users\vrchl\Downloads\02 - Tourner Dans Le Vide.mp3"></audio>
-
-
-
 <script>
+  const nadpis1=document.getElementById("nadpis1");
     const nadpisDiv=document.getElementById("nadpis");
     const btnnadpis=document.getElementById("home");
     const targetDiv = document.getElementById("first");
@@ -118,7 +135,7 @@
     const targetDiv3=document.getElementById("third");
     const btn3=document.getElementById("faq");
     const targetDiv4=document.getElementById("fourth");
-    const btn4=document.getElementById("recenze");
+    const btn4=document.getElementById("purpose");
     const targetDiv5=document.getElementById("fifth");
     const btn5=document.getElementById("profesors");
     var audio=document.getElementById("audio");
@@ -135,7 +152,8 @@
         targetDiv3.style.display="none";
         targetDiv4.style.display="none";
         targetDiv5.style.display="none";
-        audio.stop();
+       
+        
       } else {
         targetDiv.style.display = "block";
         targetDiv2.style.display="none";
@@ -143,7 +161,10 @@
         targetDiv3.style.display="none";
         targetDiv4.style.display="none";
         targetDiv5.style.display="none";
-        audio.stop();
+        nadpis1.style.display="none";
+        audio.pause();
+        
+        
         
       }
     };
@@ -155,6 +176,7 @@
         targetDiv3.style.display="none";
         targetDiv4.style.display="none";
         targetDiv5.style.display="none";
+        nadpis1.style.display="none";
       } else {
         targetDiv2.style.display = "block";
         targetDiv.style.display="none";
@@ -162,6 +184,8 @@
         targetDiv3.style.display="none";
         targetDiv4.style.display="none";
         targetDiv5.style.display="none";
+        nadpis1.style.display="none";
+        audio.pause();
       }
     };
 
@@ -172,6 +196,7 @@
         targetDiv3.style.display="none";
         targetDiv4.style.display="none";
         targetDiv5.style.display="none";
+        
       } else {
         nadpisDiv.style.display = "flex";
         targetDiv.style.display="none";
@@ -179,6 +204,8 @@
         targetDiv3.style.display="none";
         targetDiv4.style.display="none";
         targetDiv5.style.display="none";
+        audio.pause();
+        
       }
     };
 
@@ -190,6 +217,7 @@
         nadpisDiv.style.display="none";
         targetDiv4.style.display="none";
         targetDiv5.style.display="none";
+        nadpis1.style.display="none";
       } else {
         targetDiv3.style.display = "block";
         targetDiv.style.display="none";
@@ -197,6 +225,8 @@
         nadpisDiv.style.display="none";
         targetDiv4.style.display="none";
         targetDiv5.style.display="none";
+        nadpis1.style.display="none";
+        audio.pause();
       }
     };
 
@@ -207,6 +237,7 @@
         targetDiv2.style.display="none";
         nadpisDiv.style.display="none";
         targetDiv5.style.display="none";
+        nadpis1.style.display="none";
       } else {
         targetDiv4.style.display = "block";
         targetDiv.style.display="none";
@@ -214,6 +245,8 @@
         nadpisDiv.style.display="none";
         targetDiv3.style.display="none";
         targetDiv5.style.display="none";
+        nadpis1.style.display="none";
+        audio.pause();
       }
     };
 
@@ -224,6 +257,7 @@
         targetDiv2.style.display="none";
         nadpisDiv.style.display="none";
         targetDiv4.style.dsiplay="none";
+        nadpis1.style.display="none";
       } else {
         targetDiv5.style.display = "block";
         targetDiv.style.display="none";
@@ -231,12 +265,11 @@
         nadpisDiv.style.display="none";
         targetDiv3.style.display="none";
         targetDiv4.style.display="none";
+        nadpis1.style.display="none";
         
       audio.play();
       }
     };
-
-    
     
 
   </script>
