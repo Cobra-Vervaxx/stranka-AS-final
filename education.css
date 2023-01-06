@@ -24,15 +24,23 @@ background-image: url(educationback.jpg);
 {
     text-align:center;
     color:red;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    flex-direction: row;
+
 }
+
+#nadpis2
+{
+    width: 700px;
+    height:700px;
+    position:relative;
+    margin-top: 15px;
+}
+
 #first
 {
     text-align: center;
+  
 }
+
 
 
 
